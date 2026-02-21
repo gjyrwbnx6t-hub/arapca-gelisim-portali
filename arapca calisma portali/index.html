@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Arapça Çalışma Portalı</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; background-color: #f0f4f8; margin: 0; padding: 20px; text-align: center; }
+        .hero { background: linear-gradient(135deg, #6dd5ed, #2193b0); color: white; padding: 60px 20px; border-radius: 20px; max-width: 1000px; margin: 30px auto; box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
+        h1 { color: #18395b; }
+        /* Menü Çubuğu Stili */
+nav {
+    background-color: #2c3e50;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: inline-block;
+    width: 100%;
+    max-width: 1000px;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #34495e;
+    color: #3498db;
+}
+/* Alt menü genel ayarları */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Alt menü içeriği (başlangıçta gizli) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Alt menü içindeki linkler */
+.dropdown-content a {
+    float: none;
+    color: #2c3e50 !important;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Üzerine gelince arka plan rengi */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Ana menü üzerine gelince alt menüyü göster */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* İç içe açılır menü ayarları */
+.sub-dropdown {
+    position: relative;
+}
+
+.sub-dropdown-content {
+    display: none;
+    position: absolute;
+    left: 100%; /* Menünün sağına açılır */
+    top: 0;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.sub-dropdown:hover > .sub-dropdown-content {
+    display: block;
+}
+.cards { 
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+}
+
+.card { 
+    background: white; 
+    padding: 30px; 
+    border-radius: 15px; 
+    width: 250px; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05); 
+    transition: 0.3s; 
+    text-decoration: none; 
+    color: #333; 
+}
+
+.card:hover { 
+    transform: translateY(-10px); 
+    box-shadow: 0 15px 25px rgba(0,0,0,0.15); 
+}
+.header-banner {
+    width: 100%;
+    max-width: 1000px; /* Menü ile aynı genişlikte olması için */
+    height: 250px; /* Fotoğrafın yüksekliği */
+    margin: 0 auto 20px auto; /* Ortalamak ve menüyle arasına boşluk bırakmak için */
+    background-image: url('internet-sitesi.png'); /* Resminin adını buraya yaz */
+    background-size: cover; /* Resmi alana sığdırır */
+    background-position: center; /* Resmi ortalar */
+    border-radius: 15px; /* Köşeleri yuvarlatır */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+    </style>
+</head>
+<body>
+     <div class="header-banner"></div>
+
+    <nav>
+    <a href="#">Anasayfa</a>
+    
+    <div class="dropdown">
+        <a href="#">Arapça Eğitimler ▼</a>
+        <div class="dropdown-content">
+            
+            <div class="sub-dropdown">
+                <a href="#">13 Günlük Eğitim ▶</a>
+                <div class="sub-dropdown-content">
+                    <a href="1-seviye-gun-1.html">1. Gün</a>
+                    <a href="1-seviye-gun-2.html">2. Gün</a>
+                    <a href="1-seviye-gun-3.html">3. Gün</a>
+                    <a href="1-seviye-gun-4.html">4. Gün</a>
+                    <a href="1-seviye-gun-5.html">5. Gün</a>
+                    <a href="1-seviye-gun-6.html">6. Gün</a>
+                    <a href="1-seviye-gun-7.html">7. Gün</a>
+                    <a href="1-seviye-gun-8.html">8. Gün</a>
+                    <a href="1-seviye-gun-9.html">9. Gün</a>
+                    <a href="1-seviye-gun-10.html">10. Gün</a>
+                    <a href="1-seviye-gun-11.html">11. Gün</a>
+                    <a href="1-seviye-gun-12.html">12. Gün</a>
+                    <a href="1-seviye-gun-13.html">13. Gün</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="kelime-kartlari.html">Kelime Kartları</a>
+    <a href="#">Boşluk Doldurma</a>
+    <a href="#">Boşluk Doldurma</a>
+    <a href="#">Pusula</a>
+</nav>
+    <div class="hero">
+        <h1>Arapça Çalışma Portalı</h1>
+        <p>Özetler, şemalar ve ders notları inşallah çok yakında burada olacak.</p>
+    </div>
+
+ <div class="cards">
+    <a href="#" class="card">
+        <h3>1. Seviye Eğitim</h3>
+        <p>13 günlük temel seviye dersleri.</p>
+    </a>
+    <a href="#" class="card">
+        <h3>Meta-Arapça</h3>
+        <p>38 günlük yoğun program.</p>
+    </a>
+</div>
+</body>
+</html>
+
