@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Antrenmanlar - Arapça Portalı</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            /* Arka planı koyu lacivert yaparak şeffaf kartların öne çıkmasını sağlıyoruz */
+            background: linear-gradient(135deg, #ffffff, #2c3e50); 
+            margin: 0; padding: 20px; text-align: center; color: rgb(38, 84, 129);
+        }
+
+        nav { background-color: rgb(38, 84, 129); border-radius: 12px; display: inline-block; width: 100%; max-width: 1000px; margin-bottom: 30px; }
+        nav a { float: left; color: white; padding: 16px 20px; text-decoration: none; transition: 0.3s; }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* İkişerli yan yana */
+            gap: 25px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .training-card {
+            background: rgb(38, 84, 129); /* Şeffafa yakın beyaz */
+            backdrop-filter: blur(10px); /* Arkayı hafif buğulu yapar, çok modern durur */
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+            padding: 40px 20px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .training-card:hover {
+            transform: translateY(-10px);
+            background: rgb(0, 0, 0);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+        }
+
+        /* Atari Tarzı Kılıç-Kalkan İkonu (Emoji veya Görsel) */
+        .icon {
+            font-size: 40px;
+            display: block;
+            margin-bottom: 15px;
+            filter: drop-shadow(0 0 5px #ffffff); /* Koyu lacivert gölge */
+        }
+
+        .training-card h3 { margin: 0; font-size: 24px; letter-spacing: 1px; }
+
+        @media (max-width: 600px) { .grid-container { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+    <nav><a href="index.html">← Anasayfaya Dön</a></nav>
+
+    <h1>Kılıç Kuşan: Günlük Antrenmanlar</h1>
+
+    <div class="grid-container">
+        <a href="antrenmanlar/antrenman-gun-1.html" class="training-card"><span class="icon">⚔️</span><h3>1. GÜN</h3></a>
+        <a href="antrenmanlar/antrenman-gun-2.html" class="training-card"><span class="icon">⚔️</span><h3>2. GÜN</h3></a>
+        <a href="antrenmanlar/antrenman-gun-3.html" class="training-card"><span class="icon">⚔️</span><h3>3. GÜN</h3></a>
+        <a href="antrenmanlar/antrenman-gun-4.html" class="training-card"><span class="icon">⚔️</span><h3>4. GÜN</h3></a>
+        <a href="antrenmanlar/antrenman-gun-5.html" class="training-card"><span class="icon">⚔️</span><h3>5. GÜN</h3></a>
+        <a href="antrenmanlar/antrenman-gun-6.html" class="training-card"><span class="icon">⚔️</span><h3>6. GÜN</h3></a>
+        <a href="antrenmanlar/antrenman-gun-7.html" class="training-card"><span class="icon">⚔️</span><h3>7. GÜN</h3></a>
+        <a href="antrenmanlar/antrenman-gun-8.html" class="training-card"><span class="icon">⚔️</span><h3>8. GÜN</h3></a>
+        <a href="antrenmanlar/antrenman-gun-9.html" class="training-card"><span class="icon">⚔️</span><h3>9. GÜN</h3></a>
+        <a href="antrenmanlar/antrenman-gun-10.html" class="training-card"><span class="icon">⚔️</span><h3>10. GÜN</h3></a>
+        <a href="antrenmanlar/antrenman-gun-11.html" class="training-card"><span class="icon">⚔️</span><h3>11. GÜN</h3></a>
+        <a href="antrenmanlar/antrenman-gun-12.html" class="training-card"><span class="icon">⚔️</span><h3>12. GÜN</h3></a>
+        <a href="antrenmanlar/antrenman-gun-13.html" class="training-card"><span class="icon">⚔️</span><h3>13. GÜN</h3></a>
+    </div>
+
+</body>
+</html>

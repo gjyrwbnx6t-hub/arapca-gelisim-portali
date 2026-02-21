@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>1. Gün Antrenmanları - Arapça Portalı</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Amiri&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            /* 135deg yerine 'to right' yaparak yatay geçiş sağladık */
+            background: linear-gradient(to right, #ffffff, #2c3e50); 
+            /* Sayfa kısa olsa bile arka planı tüm ekrana yayar */
+            background-attachment: fixed; 
+            min-height: 100vh; 
+            margin: 0; 
+            padding: 20px; 
+            text-align: center; 
+            color: rgb(38, 84, 129);
+        }
+
+        nav { background-color: rgb(38, 84, 129); border-radius: 12px; display: inline-block; width: 100%; max-width: 1000px; margin-bottom: 30px; }
+        nav a { float: left; color: white; padding: 16px 20px; text-decoration: none; transition: 0.3s; }
+        nav a:hover { color: #3498db; }
+
+        .topic-container {
+            display: flex;
+            flex-direction: column; /* Dikdörtgenleri alt alta dizer */
+            gap: 20px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .topic-card {
+            background: rgb(38, 84, 129);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 15px;
+            padding: 25px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+            display: flex; /* İçeriği yan yana hizalamak için */
+            align-items: center;
+            justify-content: space-between; /* Yazıları iki uca yaslar */
+        }
+
+        .topic-card:hover {
+            transform: translateX(10px); /* Hafif sağa kayma efekti */
+            background: rgb(0, 0, 0);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .arabic-text {
+            font-family: 'Amiri', serif;
+            font-size: 28px;
+            direction: rtl;
+        }
+
+        .turkish-text {
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .icon-small { font-size: 24px; margin-right: 15px; }
+
+        h1 { margin-bottom: 40px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="antrenmanlar.html">← Antrenmanlara Dön</a>
+    </nav>
+
+    <h1>1. Gün: Temel Kavramlar</h1>
+
+    <div class="topic-container">
+        <a href="antrenman-erillik.html" class="topic-card">
+            <div style="display: flex; align-items: center;">
+                <span class="icon-small">⚔️</span>
+                <span class="turkish-text">Erillik ve Dişillik</span>
+            </div>
+            <span class="arabic-text">المُذَكَّرُ وَالمُؤَنَّثُ</span>
+        </a>
+
+        <a href="antrenman-nisbe.html" class="topic-card">
+            <div style="display: flex; align-items: center;">
+                <span class="icon-small">⚔️</span>
+                <span class="turkish-text">Nisbe Sıfatı</span>
+            </div>
+            <span class="arabic-text">النِّسْبَةُ</span>
+        </a>
+
+        <a href="antrenman-soru.html" class="topic-card">
+            <div style="display: flex; align-items: center;">
+                <span class="icon-small">⚔️</span>
+                <span class="turkish-text">Soru Kelimeleri</span>
+            </div>
+            <span class="arabic-text">أَدَوَاتُ الإِسْتِفْهَامِ</span>
+        </a>
+
+        <a href="antrenman-belirlilik.html" class="topic-card">
+            <div style="display: flex; align-items: center;">
+                <span class="icon-small">⚔️</span>
+                <span class="turkish-text">Belirlilik Takısı</span>
+            </div>
+            <span class="arabic-text">أَلِ التَّعْرِيفُ</span>
+        </a>
+    </div>
+
+</body>
+</html>
